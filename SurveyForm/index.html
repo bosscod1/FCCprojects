@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Meme Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">🐱 Cat Meme Survey 🐾</h1>
+    <p id="description">Tell us about your love for cat memes!</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Your Cat Name:</label>
+      <input id="name" type="text" placeholder="Fluffy McWhiskers" required>
+
+      <!-- Email -->
+      <label id="email-label" for="email">Your Email (for cat memes only!):</label>
+      <input id="email" type="email" placeholder="meow@example.com" required>
+
+      <!-- Age -->
+      <label id="number-label" for="number">Your Cat Level (Age):</label>
+      <input id="number" type="number" min="13" max="120" placeholder="99 lives left" required>
+
+      <!-- Favorite Cat Meme -->
+      <label for="dropdown">Choose your favorite cat meme type:</label>
+      <select id="dropdown">
+        <option value="grumpy">Grumpy Cat 😾</option>
+        <option value="hover">Hover Cat 🛸</option>
+        <option value="bongo">Bongo Cat 🥁</option>
+        <option value="none">I don't like cat memes (🚨 Suspicious 🚨)</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <fieldset>
+        <legend>How often do you look at cat memes? 🐱‍💻</legend>
+        <label ><input type="radio" name="frequency" value="daily"> Daily (I have a problem)</label>
+        <label><input type="radio" name="frequency" value="weekly"> Weekly (Purrfect balance)</label>
+        <label><input type="radio" name="frequency" value="never"> Never (😾 You're lying!)</label>
+      </fieldset>
+
+      <!-- Checkboxes -->
+      <fieldset>
+        <legend>What do you do when you see a cute cat meme? 🐾</legend>
+        <label><input type="checkbox" value="share"> Share it with friends</label>
+        <label><input type="checkbox" value="laugh"> Laugh uncontrollably</label>
+        <label><input type="checkbox" value="cry"> Cry from happiness</label>
+      </fieldset>
+
+      <!-- Comments -->
+      <label for="comments">Any extra cat thoughts?</label>
+      <textarea id="comments" rows="4" placeholder="Meow meow meow..."></textarea>
+
+      <!-- Submit -->
+      <button id="submit" type="submit">Send Your Meows! 😸</button>
+    </form>
+    <!-- Cat Meme Gallery -->
+<div class="cat-meme-gallery">
+  <h2>🐱</h2>
+  <div class="meme-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp365HC6gRWmjuWxvF4fyUl2ds-TADD6skPA&s" alt="Grumpy Cat" class="meme">
+    <img src="https://preview.redd.it/does-anyone-other-than-me-know-where-this-cat-is-from-lol-v0-img24gu05lfb1.jpg?width=1080&crop=smart&auto=webp&s=c3f0a1639fc3a21e04864423c108302d5a36ff8b" alt="Bongo Cat" class="meme">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHNHOrYi_3Oyn_8tVCPLZ8v54MdqNW16u0hIcZ-mhUP4uks95BzkmFj9JWo8qVhljIKQ4&usqp=CAU" alt="Hover Cat" class="meme">
+  </div>
+</div>
+  </div>
+</body>
+</html>
