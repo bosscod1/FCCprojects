@@ -1,0 +1,164 @@
+/* Full-page cat paw background */
+body {
+  font-family: "Comic Sans MS", "Arial", sans-serif;
+  background-color: #ffefd5; /* Light peach background */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure body fills the entire viewport */
+  background-image: url('https://media.tenor.com/3SHajRoXGRUAAAAM/explosion-cats.gif');
+ /* Cat paw pattern */
+  background-repeat: repeat; /* Repeat pattern to fill the page */
+  background-size: 220px 220px; /* Adjust size for better visibility */
+}
+
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 30px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+h1 {
+  font-size: 2em;
+  color: #ff4500; /* Orange like Garfield! */
+  text-shadow: 2px 2px #ffcc00;
+}
+
+/* Description */
+p {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #333;
+}
+
+/* Form Elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label, select, input, textarea {
+  width: 90%;
+  max-width: 400px;
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+}
+
+/* Radio & Checkbox */
+fieldset {
+  border: none;
+  text-align: left;
+}
+
+legend {
+  font-weight: bold;
+}
+
+/* Fix radio button & checkbox alignment */
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  border: none;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Reduce space between button & text */
+  margin: 5px 0;
+  width: auto; /* Prevent full width issue */
+}
+
+/* Ensure radio buttons & checkboxes do not stretch */
+input[type="radio"],
+input[type="checkbox"] {
+  width: 16px; /* Set fixed width */
+  height: 16px; /* Set fixed height */
+  flex-shrink: 0; /* Prevent resizing */
+  margin: 0; /* Remove extra margins */
+}
+
+
+/* Submit Button */
+#submit {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#submit:hover {
+  transform: scale(1.1);
+  background-color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .container {
+    width: 95%;
+  }
+}
+
+/* Cat Meme Gallery Styling */
+.cat-meme-gallery {
+  margin-top: 30px; /* Space between form & memes */
+  padding: 20px;
+  background-color: #fff8dc; /* Soft cream color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cat-meme-gallery h2 {
+  font-size: 1.8em;
+  color: #ff4500; /* Fun orange */
+  text-shadow: 2px 2px #ffcc00;
+}
+
+/* Meme Container */
+.meme-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Meme Images */
+.meme {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.meme:hover {
+  transform: scale(1.1);
+}
+
